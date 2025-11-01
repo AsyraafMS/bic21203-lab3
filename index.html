@@ -3,132 +3,138 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        * {
-            margin: 0px;
-            padding: 0px;
-            box-sizing: border-box;
-        }
-
-        .container {
-            display: flex;
-            flex-direction: column;
-            background-color: gray;
-            height: 100vh;
-            width: 100%;
-        }
-
-        .logo {
-            display: flex;
-            flex-direction: row;
-            background-color: aqua;
-            min-height: 100px;
-            width: 100%;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .navigation {
-            display: flex;
-            flex-direction: row;
-            background-color: aqua;
-            min-height: 50px;
-            margin-top: 10px;
-            justify-content: space-between;
-            /* align-content: center; */
-            align-items: center;
-            
-        }
-
-        .navigation a {
-            text-decoration: none;
-        }
-
-        .header {
-            display: flex;
-            flex-direction: row;
-            min-height: 100px;
-            width: 100%;
-            background-color: aqua;
-            margin-top: 10px;
-        }
-
-        .content {
-            display: flex;
-            flex-direction: row;
-            min-height: 300px;
-            background-color: red;
-            margin-top: 10px;
-            justify-content: space-between;
-          
-        }
-
-        .side_bar {
-            display: flex;
-            flex-direction: column;
-            background-color: aqua;
-            flex-basis: 20%;
-        }
-
-
-        .body_area {
-            display: flex;
-            flex-direction: column;
-            background-color: aqua;
-            flex-basis: 75%;
-        }
-
-        .footer {
-            display: flex;
-            flex-direction: row;
-            background-color: aqua;
-            align-items: center;
-            justify-content: center;
-            margin-top: 10px;
-            min-height: 50px;
-        }
-
-
-    </style>
+    <title>Asyraaf's Personal Website</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
 
         <div class="logo">
-            Logo
+            <div style="display: flex; flex-direction: column; align-items: center; gap: 10px;">
+                <img src="logo-uthm-web.png" alt="UTHM Logo" style="height: 60px; width: auto;">
+                <span>Asyraaf's Portfolio</span>
+            </div>
         </div>
 
         <div class="navigation">
-            <a href="">Home</a>
-            <a href="">Courses</a>
-            <a href="">Contact Us</a>
+            <a href="index.html" class="nav-link active">Home</a>
+            <a href="biodata.html" class="nav-link">Biodata</a>
+            <a href="hobbies.html" class="nav-link">Hobbies</a>
+            <a href="campus.html" class="nav-link">Campus Life</a>
         </div>
 
         <div class="header">
-            <p>Header</p>
+            <h1>Welcome to My Portfolio</h1>
+            <p>Explore my biodata, hobbies, and campus life</p>
         </div>
 
         <div class="content">
 
             <div class="side_bar">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere, quia.
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="biodata.html">Biodata</a></li>
+                    <li><a href="hobbies.html">Hobbies</a></li>
+                    <li><a href="campus.html">Campus Life</a></li>
+                </ul>
             </div>
 
             <div class="body_area">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis ullam quisquam tempore id autem blanditiis.
+                <!-- Home Section -->
+                <div class="section active" id="home">
+                    <h2>Welcome</h2>
+                    <p>Hello! I'm Muhammad Asyraaf bin Mokhtar Sani, a Software Engineering student at Universiti Tun Hussein Onn Malaysia (UTHM).</p>
+                    <p>This website shows my personal information, interests, and experiences during my campus life. Feel free to explore the different sections to learn more about me.</p>
+                </div>
+
+                <!-- Biodata Section -->
+                <div class="section" id="biodata">
+                    <h2>Biodata</h2>
+                    <table class="biodata-table">
+                        <tr>
+                            <th>Name</th>
+                            <td>Muhammad Asyraaf bin Mokhtar Sani</td>
+                        </tr>
+                        <tr>
+                            <th>Date of Birth</th>
+                            <td>29th December 2002</td>
+                        </tr>
+                        <tr>
+                            <th>Religion</th>
+                            <td>Islam</td>
+                        </tr>
+                        <tr>
+                            <th>Race</th>
+                            <td>Malay</td>
+                        </tr>
+                        <tr>
+                            <th>Address</th>
+                            <td>No. 1, Jalan Indah 3, Taman Parit Yusof 2, Batu Pahat, Semerah, Johor</td>
+                        </tr>
+                        <tr>
+                            <th>Contact</th>
+                            <td>Mobile: 011-2872 1176 | <a href="https://github.com/AsyraafMS" target="_blank">GitHub</a> | <a href="https://asyraafms.com" target="_blank">Website</a></td>
+                        </tr>
+                        <tr>
+                            <th>Course</th>
+                            <td>Bachelor in Software Engineering with Honours (BIP), UTHM</td>
+                        </tr>
+                        <tr>
+                            <th>Skills</th>
+                            <td>Java, C++, Python, Dart, Cloud Computing, React</td>
+                        </tr>
+                        <tr>
+                            <th>2025 Wishlist</th>
+                            <td>Fill my portfolio with projects</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <!-- Hobbies Section -->
+                <div class="section" id="hobbies">
+                    <h2>Hobbies</h2>
+                    <div class="hobby-item">
+                        <h3>Gaming</h3>
+                        <p>I'm passionate about video games, especially strategy and competitive games.</p>
+                    </div>
+                    <div class="hobby-item">
+                        <h3>Coding Projects</h3>
+                        <p>Building personal projects and exploring new programming languages and frameworks is one of my favorite pastimes.</p>
+                    </div>
+                    <div class="hobby-item">
+                        <h3>Technology Exploration</h3>
+                        <p>I love staying updated with the latest technology trends and exploring emerging technologies. I often watch videos by Fireship and LinusTechTips on YouTube.</p>
+                    </div>
+                </div>
+
+                <!-- Campus Life Section -->
+                <div class="section" id="campus">
+                    <h2>Campus Life at UTHM</h2>
+                    <div class="campus-item">
+                        <h3>Academic Journey</h3>
+                        <p>I'm currently pursuing a Bachelor's degree in Software Engineering with Honours, focusing on developing practical skills and knowledge in modern software development.</p>
+                    </div>
+                    <div class="campus-item">
+                        <h3>Student Activities</h3>
+                        <p>Best of The Best Program, MOHE-MDEC Global Outsourcing Talent (GOT), Webinar Business in Computer Services, Future of Facility Automation Technology and Innovation in Smart Development</p>
+                    </div>
+                    <div class="campus-item">
+                        <h3>Learning Experience</h3>
+                        <p>So far, through lab sessions, projects, and programs, I've gained hands-on experience in software development, cloud computing, and web technologies.</p>
+                    </div>
+                </div>
+
             </div>
 
         </div>
 
-
         <div class="footer">
-            &copy Ariffin 2025
+            &copy; 2025 Muhammad Asyraaf. All rights reserved.
         </div>
    
-        
     </div>
 
-    
+
 </body>
 </html>
